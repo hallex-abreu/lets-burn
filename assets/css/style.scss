@@ -1,0 +1,395 @@
+$mobile: 320px;
+$tablet: 768px;
+$notebook: 1000px;
+$desktop: 1300px;
+$primary: #15080f;
+$secondary: #e73f1e;
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoloration: none;
+}
+
+@mixin fjalla($espessura, $tamanho, $color) {
+    font-family: 'Fjalla One', sans-serif;
+	font-size: $tamanho;
+	font-weight: $espessura;
+	color: $color;
+}
+
+@mixin noto($espessura, $tamanho, $color) {
+    font-family: 'Noto Sans Mono', monospace;
+	font-size: $tamanho;
+	font-weight: $espessura;
+	color: $color;
+}
+
+.container {
+	width: 1bold;
+	margin: 0 auto;
+	display: block;
+	@media screen and (min-width: $mobile) {
+		width: 100%;
+	}
+	@media screen and (min-width: $tablet) {
+		width: 100%;
+	}
+	@media screen and (min-width: $notebook) {
+		width: 1000px;
+	}
+	@media screen and (min-width: $desktop) {
+		width: 1300px;
+	}
+	.row {
+		display: flex;
+		flex-direction: row;
+		@media screen and (min-width: $mobile) {
+			flex-direction: column;
+		}
+		@media screen and (min-width: $tablet) {
+			flex-direction: row;
+		}
+		@media screen and (min-width: $notebook) {
+			flex-direction: row;
+		}
+		@media screen and (min-width: $desktop) {
+			flex-direction: row;
+		}
+		.column {
+			flex: 1;
+		}
+	}
+}
+
+.center{
+    text-align: center;
+}
+
+section#login, section#register, section#reset-password, section#search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0;
+    min-height: 100vh;
+
+    .wrapper{
+        max-width: 360px; 
+        padding: 20px;
+        background-image: linear-gradient(to bottom, #fba5f0 , #9cbcfc, #bfdcf3);
+        border-radius: 20px;
+    } 
+
+    .logo{
+        width: 150px;
+        height: auto;
+        margin: 50px 0;
+    }
+    h2{
+        @include fjalla(800, 40px, $primary);
+        text-align: center;
+        margin: 20px 0;
+        text-transform: uppercase;
+    }
+    p{
+        @include noto(400, 15px, $primary);
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    input{
+        background-color: #000000;
+        border-radius: 50px;
+        width: 200px;
+        @include noto(400, 15px, #ddff6d);
+        border: none;
+        text-align: center;
+        margin: 5px 0;
+        height: 45px;
+        padding: 5px 10px !important;
+    }
+    span{
+        text-align: center;
+        font-weight: 800;
+    }
+    button{
+        background-color: #ddff6d;
+        border-radius: 50px;
+        width: 150px;
+        @include noto(800, 15px, #000000);
+        border: none;
+        text-align: center;
+        height: 45px;
+        margin: 5px 0;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: all 0.2s;
+
+        &:hover {
+            background-color: #c4e55a;
+        }
+    }
+    .form-group{
+        justify-content: center;
+        display: grid;
+    }
+    .assinatura{
+        width: 250px;
+        height: auto;
+        margin: 5px;
+        margin-bottom: 20px;
+    }
+    .info{
+        color: #000000;
+        font-weight: 800;
+        font-size: 12px;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 80px;
+    }
+    .mt-80{
+        margin-top: 80px;
+    }
+    a{
+        @include noto(800, 12px, #000000);  
+    }
+    h6{
+        @include noto(800, 12px, #f65959);
+        text-align: center;
+    }
+    .search{
+        background-color: #ddff6d;
+        padding: 10px 20px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        width: 250px;
+        text-decoration: none;
+        @include noto(800, 15px, #000000);
+        border: none;
+        text-align: center;
+        height: 45px;
+        margin: 5px 0;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: all 0.2s;
+
+        &:hover {
+            background-color: #c4e55a;
+        }
+
+        svg{
+            margin: 0 5px;
+        }
+    }
+
+    .see-more{
+        background-color: #ddff6d;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        width: 30px;
+        text-decoration: none;
+        @include noto(800, 15px, #000000);
+        border: none;
+        text-align: center;
+        height: 45px;
+        margin: 5px;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: all 0.2s;
+
+        &:hover {
+            background-color: #c4e55a;
+        }
+    }
+
+    .customer{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+section#home{
+    .logo{
+        width: 100px;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .column{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icon{
+        border-radius: 100%;
+        background-color: #c4e55a;
+        padding: 10px;
+        margin: 0 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg{
+            color: #000000;
+        }
+    }
+
+    .yes{
+        background-color: #00ff00 !important;
+        border: solid 1px #fff !important;
+    }   
+    .no{
+        background-color: #ff0000 !important;
+        border: solid 1px #fff !important;
+    }
+
+    h4{
+        @include noto(400, 20px, $primary);
+        text-align: center;
+    }
+
+    h6{
+        @include noto(800, 15px, $primary);
+        text-align: center;
+        margin: 0 20px;
+    }
+
+    a{
+        @include noto(800, 15px, $primary);
+        text-decoration: none;
+    }
+
+    .icon-arrow{
+        margin-bottom: -5px;
+        svg{
+            margin: 25px;
+            background-color: #c4e55a;
+            border-radius: 100%;
+            padding: 3px;
+        }
+    }
+
+    b{
+        font-weight: 800 !important;
+    }
+
+    form{
+        width: 100%;
+        display: flex;
+        margin: 20px;
+        input{
+            background-color: #ddff6d;
+            border-radius: 50px 0 0 50px;
+            width: 100%;
+            @include noto(400, 15px, #000000);
+            border: none;
+            text-align: left;
+            margin: 5px 0;
+            height: 45px;
+            padding: 5px 20px !important;
+        }
+
+        button{
+            background-color: #000000;
+            border-radius: 0 50px 50px 0;
+            width: 150px;
+            @include noto(800, 15px, #ddff6d);
+            border: none;
+            text-align: center;
+            height: 45px;
+            margin: 5px 0;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: all 0.2s;
+    
+            &:hover {
+                background-color: #7a757c;
+            }
+        }
+    }
+
+    .button{
+        background-image: linear-gradient(to bottom, #fba5f0 , #9cbcfc, #bfdcf3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        width: 150px;
+        @include noto(800, 15px, #000000);
+        border: none;
+        text-align: center;
+        height: 45px;
+        margin: 20px 0;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: all 0.2s;
+
+        &:hover {
+            
+            background-image: linear-gradient(to top, #fba5f0 , #9cbcfc, #bfdcf3);
+        }
+    }
+
+    .mb-5{
+        margin-bottom: 50px;
+    }
+    .mb-1{
+        margin-bottom: 10px;
+    }
+    .mt-5{
+        margin-top: 50px;
+    }
+
+    table{
+        padding: 50px 20px;
+        width: 100%;
+        border-collapse: collapse;
+        
+        .thead{
+            background-color: #7a757c;
+
+            th{
+                @include noto(800, 15px, #ddff6d);
+                text-align: center;
+                padding: 10px;
+                border-radius: 50px;
+                white-space: nowrap;
+                text-transform: uppercase;
+            }
+        }
+
+        tbody{
+            .td-1{
+                background-color: #ddff6d;
+            }
+            td{
+                @include noto(800, 15px, $primary);
+                text-align: center;
+                padding: 20px 0;
+                white-space: nowrap;
+            }
+        }
+    }
+
+    .lf{
+        background-color: #c4e55a;
+        padding: 0 10px;
+    }
+
+    .assinatura{
+        width: 250px;
+        height: auto;
+        margin: 5px;
+        margin-bottom: 20px;
+    }
+}

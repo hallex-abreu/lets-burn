@@ -1,0 +1,406 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoloration: none;
+}
+
+.container {
+  width: 1bold;
+  margin: 0 auto;
+  display: block;
+}
+@media screen and (min-width: 320px) {
+  .container {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 1000px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .container {
+    width: 1300px;
+  }
+}
+.container .row {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (min-width: 320px) {
+  .container .row {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container .row {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .container .row {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .container .row {
+    flex-direction: row;
+  }
+}
+.container .row .column {
+  flex: 1;
+}
+
+.center {
+  text-align: center;
+}
+
+section#login, section#register, section#reset-password, section#search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 20px 0;
+  min-height: 100vh;
+}
+section#login .wrapper, section#register .wrapper, section#reset-password .wrapper, section#search .wrapper {
+  max-width: 360px;
+  padding: 20px;
+  background-image: linear-gradient(to bottom, #fba5f0, #9cbcfc, #bfdcf3);
+  border-radius: 20px;
+}
+section#login .logo, section#register .logo, section#reset-password .logo, section#search .logo {
+  width: 150px;
+  height: auto;
+  margin: 50px 0;
+}
+section#login h2, section#register h2, section#reset-password h2, section#search h2 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  color: #15080f;
+  text-align: center;
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+section#login p, section#register p, section#reset-password p, section#search p {
+  font-family: "Noto Sans Mono", monospace;
+  font-size: 15px;
+  font-weight: 400;
+  color: #15080f;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 5px;
+}
+section#login input, section#register input, section#reset-password input, section#search input {
+  background-color: #000000;
+  border-radius: 50px;
+  width: 200px;
+  font-family: "Noto Sans Mono", monospace;
+  font-size: 15px;
+  font-weight: 400;
+  color: #ddff6d;
+  border: none;
+  text-align: center;
+  margin: 5px 0;
+  height: 45px;
+  padding: 5px 10px !important;
+}
+section#login span, section#register span, section#reset-password span, section#search span {
+  text-align: center;
+  font-weight: 800;
+}
+section#login button, section#register button, section#reset-password button, section#search button {
+  background-color: #ddff6d;
+  border-radius: 50px;
+  width: 150px;
+  font-family: "Noto Sans Mono", monospace;
+  font-size: 15px;
+  font-weight: 800;
+  color: #000000;
+  border: none;
+  text-align: center;
+  height: 45px;
+  margin: 5px 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+section#login button:hover, section#register button:hover, section#reset-password button:hover, section#search button:hover {
+  background-color: #c4e55a;
+}
+section#login .form-group, section#register .form-group, section#reset-password .form-group, section#search .form-group {
+  justify-content: center;
+  display: grid;
+}
+section#login .assinatura, section#register .assinatura, section#reset-password .assinatura, section#search .assinatura {
+  width: 250px;
+  height: auto;
+  margin: 5px;
+  margin-bottom: 20px;
+}
+section#login .info, section#register .info, section#reset-password .info, section#search .info {
+  color: #000000;
+  font-weight: 800;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 80px;
+}
+section#login .mt-80, section#register .mt-80, section#reset-password .mt-80, section#search .mt-80 {
+  margin-top: 80px;
+}
+section#login a, section#register a, section#reset-password a, section#search a {
+  font-family: "Noto Sans Mono", monospace;
+  font-size: 12px;
+  font-weight: 800;
+  color: #000000;
+}
+section#login h6, section#register h6, section#reset-password h6, section#search h6 {
+  font-family: "Noto Sans Mono", monospace;
+  font-size: 12px;
+  font-weight: 800;
+  color: #f65959;
+  text-align: center;
+}
+section#login .search, section#register .search, section#reset-password .search, section#search .search {
+  background-color: #ddff6d;
+  padding: 10px 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  width: 250px;
+  text-decoration: none;
+  font-family: "Noto Sans Mono", monospace;
+  font-size: 15px;
+  font-weight: 800;
+  color: #000000;
+  border: none;
+  text-align: center;
+  height: 45px;
+  margin: 5px 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+section#login .search:hover, section#register .search:hover, section#reset-password .search:hover, section#search .search:hover {
+  background-color: #c4e55a;
+}
+section#login .search svg, section#register .search svg, section#reset-password .search svg, section#search .search svg {
+  margin: 0 5px;
+}
+section#login .see-more, section#register .see-more, section#reset-password .see-more, section#search .see-more {
+  background-color: #ddff6d;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 30px;
+  text-decoration: none;
+  font-family: "Noto Sans Mono", monospace;
+  font-size: 15px;
+  font-weight: 800;
+  color: #000000;
+  border: none;
+  text-align: center;
+  height: 45px;
+  margin: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+section#login .see-more:hover, section#register .see-more:hover, section#reset-password .see-more:hover, section#search .see-more:hover {
+  background-color: #c4e55a;
+}
+section#login .customer, section#register .customer, section#reset-password .customer, section#search .customer {
+  display: flex;
+  justify-content: center;
+}
+
+section#home .logo {
+  width: 100px;
+  height: auto;
+  margin: 10px 0;
+}
+section#home .column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section#home .icon {
+  border-radius: 100%;
+  background-color: #c4e55a;
+  padding: 10px;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section#home .icon svg {
+  color: #000000;
+}
+section#home .yes {
+  background-color: #00ff00 !important;
+  border: solid 1px #fff !important;
+}
+section#home .no {
+  background-color: #ff0000 !important;
+  border: solid 1px #fff !important;
+}
+section#home h4 {
+  font-family: "Noto Sans Mono", monospace;
+  font-size: 20px;
+  font-weight: 400;
+  color: #15080f;
+  text-align: center;
+}
+section#home h6 {
+  font-family: "Noto Sans Mono", monospace;
+  font-size: 15px;
+  font-weight: 800;
+  color: #15080f;
+  text-align: center;
+  margin: 0 20px;
+}
+section#home a {
+  font-family: "Noto Sans Mono", monospace;
+  font-size: 15px;
+  font-weight: 800;
+  color: #15080f;
+  text-decoration: none;
+}
+section#home .icon-arrow {
+  margin-bottom: -5px;
+}
+section#home .icon-arrow svg {
+  margin: 25px;
+  background-color: #c4e55a;
+  border-radius: 100%;
+  padding: 3px;
+}
+section#home b {
+  font-weight: 800 !important;
+}
+section#home form {
+  width: 100%;
+  display: flex;
+  margin: 20px;
+}
+section#home form input {
+  background-color: #ddff6d;
+  border-radius: 50px 0 0 50px;
+  width: 100%;
+  font-family: "Noto Sans Mono", monospace;
+  font-size: 15px;
+  font-weight: 400;
+  color: #000000;
+  border: none;
+  text-align: left;
+  margin: 5px 0;
+  height: 45px;
+  padding: 5px 20px !important;
+}
+section#home form button {
+  background-color: #000000;
+  border-radius: 0 50px 50px 0;
+  width: 150px;
+  font-family: "Noto Sans Mono", monospace;
+  font-size: 15px;
+  font-weight: 800;
+  color: #ddff6d;
+  border: none;
+  text-align: center;
+  height: 45px;
+  margin: 5px 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+section#home form button:hover {
+  background-color: #7a757c;
+}
+section#home .button {
+  background-image: linear-gradient(to bottom, #fba5f0, #9cbcfc, #bfdcf3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  width: 150px;
+  font-family: "Noto Sans Mono", monospace;
+  font-size: 15px;
+  font-weight: 800;
+  color: #000000;
+  border: none;
+  text-align: center;
+  height: 45px;
+  margin: 20px 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+section#home .button:hover {
+  background-image: linear-gradient(to top, #fba5f0, #9cbcfc, #bfdcf3);
+}
+section#home .mb-5 {
+  margin-bottom: 50px;
+}
+section#home .mb-1 {
+  margin-bottom: 10px;
+}
+section#home .mt-5 {
+  margin-top: 50px;
+}
+section#home table {
+  padding: 50px 20px;
+  width: 100%;
+  border-collapse: collapse;
+}
+section#home table .thead {
+  background-color: #7a757c;
+}
+section#home table .thead th {
+  font-family: "Noto Sans Mono", monospace;
+  font-size: 15px;
+  font-weight: 800;
+  color: #ddff6d;
+  text-align: center;
+  padding: 10px;
+  border-radius: 50px;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+section#home table tbody .td-1 {
+  background-color: #ddff6d;
+}
+section#home table tbody td {
+  font-family: "Noto Sans Mono", monospace;
+  font-size: 15px;
+  font-weight: 800;
+  color: #15080f;
+  text-align: center;
+  padding: 20px 0;
+  white-space: nowrap;
+}
+section#home .lf {
+  background-color: #c4e55a;
+  padding: 0 10px;
+}
+section#home .assinatura {
+  width: 250px;
+  height: auto;
+  margin: 5px;
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
