@@ -5,10 +5,10 @@ servidor com configuração padrão (usuário 'root' sem senha) */
 // define('DB_USERNAME', 'root');
 // define('DB_PASSWORD', '');
 // define('DB_NAME', 'letsburndb');
-define('DB_SERVER', 'localhost');   
-define('DB_USERNAME', 'lippfy60_root');
-define('DB_PASSWORD', 'ZXcv!@34');
-define('DB_NAME', 'lippfy60_letsburndb');
+define('DB_SERVER', '');   
+define('DB_USERNAME', '');
+define('DB_PASSWORD', '');
+define('DB_NAME', '');
  
 /* Tentativa de conexão com o banco de dados MySQL */
 try{
