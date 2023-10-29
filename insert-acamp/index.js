@@ -4,10 +4,10 @@ const XLSX = require("xlsx");
 
 // Configuração do banco de dados
 const dbConfig = {
-  host: "108.167.132.72",
-  user: "lippfy60_root",
-  password: "ZXcv!@34",
-  database: "lippfy60_letsburndb",
+  host: "",
+  user: "",
+  password: "",
+  database: "",
 };
 
 const connection = mysql.createConnection(dbConfig);
