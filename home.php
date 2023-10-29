@@ -64,10 +64,10 @@ $stmt_count_not_make_check_in->execute();
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Ekballo - Acamp overflow 2023</title>
+    <title>Lets Burn - Acampamento Up Eusébio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="https://ekballo.lippfy.com/assets/img/logo.png" />
-    <link rel="stylesheet" href="https://ekballo.lippfy.com/assets/css/style.css">
+    <link rel="icon" type="image/png" href="https://lets-burn.lippfy.com/assets/img/logo.png" />
+    <link rel="stylesheet" href="https://lets-burn.lippfy.com/assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans+Mono&display=swap" rel="stylesheet">
@@ -84,7 +84,7 @@ $stmt_count_not_make_check_in->execute();
                     <h4>Bem-vindo, <b><?php echo ucfirst(htmlspecialchars($_SESSION["name"])); ?></b></h4>
                 </div>
                 <div class="column center">
-                    <img src="https://ekballo.lippfy.com/assets/img/logo.png" class="logo" alt="logo">
+                    <img src="https://lets-burn.lippfy.com/assets/img/logo.png" class="logo" alt="logo">
                 </div>
                 <div class="column center">
                     <a href="reset-password.php" title="Alterar senha" class="icon">
@@ -97,7 +97,7 @@ $stmt_count_not_make_check_in->execute();
             </div>
             <div class="row">
                 <div class="column">
-                    <h4>Ekballo - Acamp overflow 2023</h4>
+                    <h4>Lets Burn - Acampamento Up Eusébio</h4>
                 </div>
             </div>
             <div class="row">
@@ -186,7 +186,7 @@ $stmt_count_not_make_check_in->execute();
             <div class="row">
                 <div class="column center">
                     <a href="https://lippfy.com/" target="_blank">
-                        <img src="https://ekballo.lippfy.com/assets/img/assinatura.png" class="assinatura" alt="assinatura">
+                        <img src="https://lets-burn.lippfy.com/assets/img/assinatura.png" class="assinatura" alt="assinatura">
                     </a>
                 </div>
             </div>

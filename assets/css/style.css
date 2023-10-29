@@ -64,7 +64,10 @@
   text-align: center;
 }
 
-section#login, section#register, section#reset-password, section#search {
+section#login,
+section#register,
+section#reset-password,
+section#search {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -72,18 +75,26 @@ section#login, section#register, section#reset-password, section#search {
   margin: 20px 0;
   min-height: 100vh;
 }
-section#login .wrapper, section#register .wrapper, section#reset-password .wrapper, section#search .wrapper {
+section#login .wrapper,
+section#register .wrapper,
+section#reset-password .wrapper,
+section#search .wrapper {
   max-width: 360px;
   padding: 20px;
-  background-image: linear-gradient(to bottom, #fba5f0, #9cbcfc, #bfdcf3);
+  background-image: linear-gradient(235deg, hsl(21deg, 100%, 52%) 16%, hsl(31deg, 100%, 50%) 54%, hsl(38deg, 100%, 50%) 69%, hsl(45deg, 100%, 50%) 80%, hsl(52deg, 100%, 50%) 87%, hsl(52deg, 100%, 50%) 92%, hsl(46deg, 100%, 50%) 96%, hsl(39deg, 100%, 50%) 99%, hsl(33deg, 100%, 50%) 100%, hsl(25deg, 100%, 51%) 100%);
   border-radius: 20px;
 }
-section#login .logo, section#register .logo, section#reset-password .logo, section#search .logo {
+section#login .logo,
+section#register .logo,
+section#reset-password .logo,
+section#search .logo {
   width: 150px;
   height: auto;
-  margin: 50px 0;
 }
-section#login h2, section#register h2, section#reset-password h2, section#search h2 {
+section#login h2,
+section#register h2,
+section#reset-password h2,
+section#search h2 {
   font-family: "Fjalla One", sans-serif;
   font-size: 40px;
   font-weight: 800;
@@ -92,7 +103,10 @@ section#login h2, section#register h2, section#reset-password h2, section#search
   margin: 20px 0;
   text-transform: uppercase;
 }
-section#login p, section#register p, section#reset-password p, section#search p {
+section#login p,
+section#register p,
+section#reset-password p,
+section#search p {
   font-family: "Noto Sans Mono", monospace;
   font-size: 15px;
   font-weight: 400;
@@ -101,7 +115,10 @@ section#login p, section#register p, section#reset-password p, section#search p 
   text-align: center;
   margin-bottom: 5px;
 }
-section#login input, section#register input, section#reset-password input, section#search input {
+section#login input,
+section#register input,
+section#reset-password input,
+section#search input {
   background-color: #000000;
   border-radius: 50px;
   width: 200px;
@@ -115,11 +132,17 @@ section#login input, section#register input, section#reset-password input, secti
   height: 45px;
   padding: 5px 10px !important;
 }
-section#login span, section#register span, section#reset-password span, section#search span {
+section#login span,
+section#register span,
+section#reset-password span,
+section#search span {
   text-align: center;
   font-weight: 800;
 }
-section#login button, section#register button, section#reset-password button, section#search button {
+section#login button,
+section#register button,
+section#reset-password button,
+section#search button {
   background-color: #ddff6d;
   border-radius: 50px;
   width: 150px;
@@ -135,20 +158,32 @@ section#login button, section#register button, section#reset-password button, se
   text-transform: uppercase;
   transition: all 0.2s;
 }
-section#login button:hover, section#register button:hover, section#reset-password button:hover, section#search button:hover {
+section#login button:hover,
+section#register button:hover,
+section#reset-password button:hover,
+section#search button:hover {
   background-color: #c4e55a;
 }
-section#login .form-group, section#register .form-group, section#reset-password .form-group, section#search .form-group {
+section#login .form-group,
+section#register .form-group,
+section#reset-password .form-group,
+section#search .form-group {
   justify-content: center;
   display: grid;
 }
-section#login .assinatura, section#register .assinatura, section#reset-password .assinatura, section#search .assinatura {
+section#login .assinatura,
+section#register .assinatura,
+section#reset-password .assinatura,
+section#search .assinatura {
   width: 250px;
   height: auto;
   margin: 5px;
   margin-bottom: 20px;
 }
-section#login .info, section#register .info, section#reset-password .info, section#search .info {
+section#login .info,
+section#register .info,
+section#reset-password .info,
+section#search .info {
   color: #000000;
   font-weight: 800;
   font-size: 12px;
@@ -156,23 +191,35 @@ section#login .info, section#register .info, section#reset-password .info, secti
   margin-top: 5px;
   margin-bottom: 80px;
 }
-section#login .mt-80, section#register .mt-80, section#reset-password .mt-80, section#search .mt-80 {
+section#login .mt-80,
+section#register .mt-80,
+section#reset-password .mt-80,
+section#search .mt-80 {
   margin-top: 80px;
 }
-section#login a, section#register a, section#reset-password a, section#search a {
+section#login a,
+section#register a,
+section#reset-password a,
+section#search a {
   font-family: "Noto Sans Mono", monospace;
   font-size: 12px;
   font-weight: 800;
   color: #000000;
 }
-section#login h6, section#register h6, section#reset-password h6, section#search h6 {
+section#login h6,
+section#register h6,
+section#reset-password h6,
+section#search h6 {
   font-family: "Noto Sans Mono", monospace;
   font-size: 12px;
   font-weight: 800;
   color: #f65959;
   text-align: center;
 }
-section#login .search, section#register .search, section#reset-password .search, section#search .search {
+section#login .search,
+section#register .search,
+section#reset-password .search,
+section#search .search {
   background-color: #ddff6d;
   padding: 10px 20px;
   display: inline-flex;
@@ -193,13 +240,22 @@ section#login .search, section#register .search, section#reset-password .search,
   text-transform: uppercase;
   transition: all 0.2s;
 }
-section#login .search:hover, section#register .search:hover, section#reset-password .search:hover, section#search .search:hover {
+section#login .search:hover,
+section#register .search:hover,
+section#reset-password .search:hover,
+section#search .search:hover {
   background-color: #c4e55a;
 }
-section#login .search svg, section#register .search svg, section#reset-password .search svg, section#search .search svg {
+section#login .search svg,
+section#register .search svg,
+section#reset-password .search svg,
+section#search .search svg {
   margin: 0 5px;
 }
-section#login .see-more, section#register .see-more, section#reset-password .see-more, section#search .see-more {
+section#login .see-more,
+section#register .see-more,
+section#reset-password .see-more,
+section#search .see-more {
   background-color: #ddff6d;
   padding: 10px 20px;
   display: flex;
@@ -220,10 +276,16 @@ section#login .see-more, section#register .see-more, section#reset-password .see
   text-transform: uppercase;
   transition: all 0.2s;
 }
-section#login .see-more:hover, section#register .see-more:hover, section#reset-password .see-more:hover, section#search .see-more:hover {
+section#login .see-more:hover,
+section#register .see-more:hover,
+section#reset-password .see-more:hover,
+section#search .see-more:hover {
   background-color: #c4e55a;
 }
-section#login .customer, section#register .customer, section#reset-password .customer, section#search .customer {
+section#login .customer,
+section#register .customer,
+section#reset-password .customer,
+section#search .customer {
   display: flex;
   justify-content: center;
 }
@@ -331,7 +393,7 @@ section#home form button:hover {
   background-color: #7a757c;
 }
 section#home .button {
-  background-image: linear-gradient(to bottom, #fba5f0, #9cbcfc, #bfdcf3);
+  background-image: linear-gradient(235deg, hsl(21deg, 100%, 52%) 16%, hsl(31deg, 100%, 50%) 54%, hsl(38deg, 100%, 50%) 69%, hsl(45deg, 100%, 50%) 80%, hsl(52deg, 100%, 50%) 87%, hsl(52deg, 100%, 50%) 92%, hsl(46deg, 100%, 50%) 96%, hsl(39deg, 100%, 50%) 99%, hsl(33deg, 100%, 50%) 100%, hsl(25deg, 100%, 51%) 100%);
   display: flex;
   align-items: center;
   justify-content: center;

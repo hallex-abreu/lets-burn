@@ -22,11 +22,11 @@ if($id){
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Ekballo - Acamp overflow 2023</title>
+    <title>Lets Burn - Acampamento Up Eusébio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="https://ekballo.lippfy.com/assets/img/logo.png" />
-    <!-- <link rel="stylesheet" href="https://ekballo.lippfy.com/ekballoekballo/assets/css/style.css"> -->
-    <link rel="stylesheet" href="https://ekballo.lippfy.com/assets/css/style.css">
+    <link rel="icon" type="image/png" href="https://lets-burn.lippfy.com/assets/img/logo.png" />
+    <!-- <link rel="stylesheet" href="https://lets-burn.lippfy.com/lets-burnlets-burn/assets/css/style.css"> -->
+    <link rel="stylesheet" href="https://lets-burn.lippfy.com/assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans+Mono&display=swap" rel="stylesheet">
@@ -37,14 +37,14 @@ if($id){
         <div class="wrapper">
             <div class="row">
                 <div class="column center">
-                    <img src="https://ekballo.lippfy.com/assets/img/logo.png" class="logo" alt="logo">
+                    <img src="https://lets-burn.lippfy.com/assets/img/logo.png" class="logo" alt="logo">
                 </div>
             </div>
             <div class="row">
                 <div class="column">
                     <?php if($id && $stmt->rowCount() >= 1):?>
                         <?php foreach($results as $row):?>
-                            <p>Olá, <u><?php echo $row['name'];?></u></br>Bem-vindo(a) ao</br>Check-in Ekballo</p>
+                            <p>Olá, <u><?php echo $row['name'];?></u></br>Bem-vindo(a) ao</br>Check-in lets-burn</p>
                             <div class="center">
                                 <input name="<?php echo $row['room_name'];?>" type="text" value="<?php echo $row['room_name'];?>" disabled>
                             </div>
@@ -79,7 +79,7 @@ if($id){
             <div class="row">
                 <div class="column center mt-80">
                     <a href="https://lippfy.com/" target="_blank">
-                        <img src="https://ekballo.lippfy.com/assets/img/assinatura.png" class="assinatura" alt="assinatura">
+                        <img src="https://lets-burn.lippfy.com/assets/img/assinatura.png" class="assinatura" alt="assinatura">
                     </a>
                 </div>
             </div>
